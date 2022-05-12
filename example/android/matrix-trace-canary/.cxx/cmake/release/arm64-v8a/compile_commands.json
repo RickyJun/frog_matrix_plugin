@@ -1,0 +1,37 @@
+[
+{
+  "directory": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a",
+  "command": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dtrace_canary_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/native_deps/extracted_native_dependencies/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=gnu++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC   -std=c++1z -o CMakeFiles\\trace-canary.dir\\src\\main\\cpp\\MatrixTracer.cc.o -c E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-trace-canary\\src\\main\\cpp\\MatrixTracer.cc",
+  "file": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/src/main/cpp/MatrixTracer.cc"
+},
+
+{
+  "directory": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a",
+  "command": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dtrace_canary_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/native_deps/extracted_native_dependencies/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=gnu++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC   -std=c++1z -o CMakeFiles\\trace-canary.dir\\src\\main\\cpp\\SignalHandler.cc.o -c E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-trace-canary\\src\\main\\cpp\\SignalHandler.cc",
+  "file": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/src/main/cpp/SignalHandler.cc"
+},
+
+{
+  "directory": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a",
+  "command": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dtrace_canary_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/native_deps/extracted_native_dependencies/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=gnu++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC   -std=c++1z -o CMakeFiles\\trace-canary.dir\\src\\main\\cpp\\Support.cc.o -c E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-trace-canary\\src\\main\\cpp\\Support.cc",
+  "file": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/src/main/cpp/Support.cc"
+},
+
+{
+  "directory": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a",
+  "command": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dtrace_canary_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/native_deps/extracted_native_dependencies/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=gnu++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC   -std=c++1z -o CMakeFiles\\trace-canary.dir\\src\\main\\cpp\\AnrDumper.cc.o -c E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-trace-canary\\src\\main\\cpp\\AnrDumper.cc",
+  "file": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/src/main/cpp/AnrDumper.cc"
+},
+
+{
+  "directory": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a",
+  "command": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dtrace_canary_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/native_deps/extracted_native_dependencies/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=gnu++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC   -std=c++1z -o CMakeFiles\\trace-canary.dir\\src\\main\\cpp\\TouchEventTracer.cc.o -c E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-trace-canary\\src\\main\\cpp\\TouchEventTracer.cc",
+  "file": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/src/main/cpp/TouchEventTracer.cc"
+},
+
+{
+  "directory": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a",
+  "command": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dtrace_canary_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/native_deps/extracted_native_dependencies/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=gnu++11 -frtti -fexceptions -O2 -DNDEBUG  -fPIC   -std=c++1z -o CMakeFiles\\trace-canary.dir\\src\\main\\cpp\\nativehelper\\managed_jnienv.cc.o -c E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-trace-canary\\src\\main\\cpp\\nativehelper\\managed_jnienv.cc",
+  "file": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/src/main/cpp/nativehelper/managed_jnienv.cc"
+}
+]

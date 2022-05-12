@@ -1,0 +1,2 @@
+rootProject.name = 'frog_matrix_plugin'
+include ':matrix-android-lib'

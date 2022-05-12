@@ -1,0 +1,48 @@
+buildscript {
+    ext.kotlin_version = '1.6.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+		//matrix config
+		classpath ("com.tencent.matrix:matrix-gradle-plugin:${MATRIX_VERSION}") { changing = true }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+//matrix config
+ext {
+    minSdkVersion = 21
+    targetSdkVersion = 31
+    compileSdkVersion = 31
+    buildToolsVersion = '31.0.0'
+	VERSION_NAME = '1.0.0'
+	GROUP = 'com.example.frog_matrix_plugin_example'
+    // App dependencies
+    //supportLibraryVersion = '27.0.2'
+    //ijkPlayerVersion = '0.8.8'
+    MIN_SDK_VERSION_FOR_HOOK=21
+    VERSION_CODE = 1
+	ABI_FILTERS = ["armeabi-v7a", "arm64-v8a", "x86", "x86_64"]
+}

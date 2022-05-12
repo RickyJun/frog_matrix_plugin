@@ -1,0 +1,68 @@
+{
+  "buildFiles": [
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\CMakeLists.txt",
+    "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\build\\cmake\\platforms.cmake",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\android-base\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\liblzma\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\sys_compat\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\libprocinfo\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\src\\main\\cpp\\external\\libunwindstack\\deps\\demangle\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "lzma-Debug-x86": {
+      "artifactName": "lzma",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" lzma",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\\src\\main\\cpp\\external\\libunwindstack\\deps\\liblzma\\liblzma.a",
+      "runtimeFiles": []
+    },
+    "wechatbacktrace-Debug-x86": {
+      "artifactName": "wechatbacktrace",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" wechatbacktrace",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-backtrace\\intermediates\\cmake\\debug\\obj\\x86\\libwechatbacktrace.so",
+      "runtimeFiles": []
+    },
+    "sys_compat-Debug-x86": {
+      "artifactName": "sys_compat",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" sys_compat",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\\src\\main\\cpp\\external\\libunwindstack\\deps\\sys_compat\\libsys_compat.a",
+      "runtimeFiles": []
+    },
+    "android-base-Debug-x86": {
+      "artifactName": "android-base",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" android-base",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\\src\\main\\cpp\\external\\libunwindstack\\deps\\android-base\\libandroid-base.a",
+      "runtimeFiles": []
+    },
+    "procinfo-Debug-x86": {
+      "artifactName": "procinfo",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" procinfo",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\\src\\main\\cpp\\external\\libunwindstack\\deps\\libprocinfo\\libprocinfo.a",
+      "runtimeFiles": []
+    },
+    "unwindstack-Debug-x86": {
+      "artifactName": "unwindstack",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" unwindstack",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\\src\\main\\cpp\\external\\libunwindstack\\libunwindstack.a",
+      "runtimeFiles": []
+    },
+    "demangle-Debug-x86": {
+      "artifactName": "demangle",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\" demangle",
+      "abi": "x86",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-backtrace\\.cxx\\cmake\\debug\\x86\\src\\main\\cpp\\external\\libunwindstack\\deps\\demangle\\libdemangle.a",
+      "runtimeFiles": []
+    }
+  }
+}
