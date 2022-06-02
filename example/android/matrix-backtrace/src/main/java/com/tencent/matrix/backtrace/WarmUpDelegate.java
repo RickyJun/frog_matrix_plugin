@@ -228,7 +228,7 @@ class WarmUpDelegate {
         }
 
         if (mWarmedUpReceiver == null) {
-            mWarmedUpReceiver = new WarmedUpReceiver(mode);
+            mWarmedUpReceiver = new WarmedUpReceiver(mode, this);
         } else {
             return;
         }
@@ -566,9 +566,11 @@ class WarmUpDelegate {
     private final static class WarmedUpReceiver extends BroadcastReceiver {
 
         private WeChatBacktrace.Mode mCurrentBacktraceMode;
+        private WarmUpDelegate delegate;
 
-        WarmedUpReceiver(WeChatBacktrace.Mode mode) {
+        WarmedUpReceiver(WeChatBacktrace.Mode mode, WarmUpDelegate delegate) {
             mCurrentBacktraceMode = mode;
+            this.delegate = delegate;
         }
 
         @Override

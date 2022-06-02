@@ -44,5 +44,6 @@ ext {
     //ijkPlayerVersion = '0.8.8'
     MIN_SDK_VERSION_FOR_HOOK=21
     VERSION_CODE = 1
-	ABI_FILTERS = ["armeabi-v7a", "arm64-v8a", "x86", "x86_64"]
+	ABI_FILTERS = ["armeabi-v7a", "arm64-v8a"]
+    PUBLISH_CHANNEL = 'wechat'
 }

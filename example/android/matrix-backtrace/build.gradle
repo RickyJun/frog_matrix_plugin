@@ -16,12 +16,11 @@ android {
         externalNativeBuild {
             cmake {
                 targets = ['wechatbacktrace', 'unwindstack']
-                arguments = ['-DANDROID_STL=c++_shared',
-                             "-DEnableLOG=${ENABLE_LOG ? "ON" : "OFF"}" as String,
+                arguments = ['-DANDROID_STL=c++_shared',"-DEnableLOG=${ENABLE_LOG ? "ON" : "OFF"}" as String,
                              "-DQUT_STATISTIC_ENABLE=${ENABLE_LOG ? "ON" : "OFF"}" as String]
             }
             ndk {
-                abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+                abiFilters "armeabi-v7a", "arm64-v8a"
             }
             exportHeaders {
                 from('src/main/cpp') {

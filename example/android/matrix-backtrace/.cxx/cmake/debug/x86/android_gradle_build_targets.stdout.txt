@@ -1,0 +1,80 @@
+ninja: Entering directory `E:\personal_proj\frog_matrix_plugin\example\android\matrix-backtrace\.cxx\cmake\debug\x86'
+[1/106] Building C object CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/fake_dlfcn.c.o
+FAILED: CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/fake_dlfcn.c.o 
+C:\Users\123\AppData\Local\Android\Sdk\ndk\21.1.6352462-2\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -DQUT_STATISTIC_ENABLE -Dwechatbacktrace_EXPORTS -I../../../../src/main/cpp/external/libunwindstack -I../../../../src/main/cpp/common -I../../../../src/main/cpp/libwechatbacktrace/include -I../../../../src/main/cpp/external/libunwindstack/include -I../../../../src/main/cpp/dexfile/include -I../../../../src/main/cpp/external/libunwindstack/deps/android-base -I../../../../src/main/cpp/external/libunwindstack/deps/android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/liblzma/C -I../../../../src/main/cpp/external/libunwindstack/deps/sys_compat -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/include -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/demangle -I../../../../src/main/cpp/external/libunwindstack/deps/demangle/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -std=c99 -fstack-protector -fvisibility=hidden -Wall -Wextra -Wexit-time-destructors -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign -MD -MT CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/fake_dlfcn.c.o -MF CMakeFiles\wechatbacktrace.dir\src\main\cpp\common\fake_dlfcn.c.o.d -o CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/fake_dlfcn.c.o   -c ../../../../src/main/cpp/common/fake_dlfcn.c
+../../../../src/main/cpp/common/fake_dlfcn.c:30:2: error: "Arch unknown, please port me" 
+#error "Arch unknown, please port me" 
+ ^
+../../../../src/main/cpp/common/fake_dlfcn.c:63:5: error: use of undeclared identifier 'Elf_Ehdr'
+    Elf_Ehdr *elf = MAP_FAILED;
+    ^
+../../../../src/main/cpp/common/fake_dlfcn.c:63:15: error: use of undeclared identifier 'elf'
+    Elf_Ehdr *elf = MAP_FAILED;
+              ^
+../../../../src/main/cpp/common/fake_dlfcn.c:90:5: error: use of undeclared identifier 'elf'
+    elf = (Elf_Ehdr *) mmap(0, size, PROT_READ, MAP_SHARED, fd, 0);
+    ^
+../../../../src/main/cpp/common/fake_dlfcn.c:90:22: error: expected expression
+    elf = (Elf_Ehdr *) mmap(0, size, PROT_READ, MAP_SHARED, fd, 0);
+                     ^
+../../../../src/main/cpp/common/fake_dlfcn.c:90:12: error: use of undeclared identifier 'Elf_Ehdr'
+    elf = (Elf_Ehdr *) mmap(0, size, PROT_READ, MAP_SHARED, fd, 0);
+           ^
+../../../../src/main/cpp/common/fake_dlfcn.c:94:9: error: use of undeclared identifier 'elf'
+    if (elf == MAP_FAILED) fatal("mmap() failed for %s", libpath);
+        ^
+../../../../src/main/cpp/common/fake_dlfcn.c:100:23: error: use of undeclared identifier 'elf'
+    shoff = ((void *) elf) + elf->e_shoff;
+                      ^
+../../../../src/main/cpp/common/fake_dlfcn.c:100:30: error: use of undeclared identifier 'elf'
+    shoff = ((void *) elf) + elf->e_shoff;
+                             ^
+../../../../src/main/cpp/common/fake_dlfcn.c:102:21: error: use of undeclared identifier 'elf'
+    for (k = 0; k < elf->e_shnum; k++, shoff += elf->e_shentsize) {
+                    ^
+../../../../src/main/cpp/common/fake_dlfcn.c:102:49: error: use of undeclared identifier 'elf'
+    for (k = 0; k < elf->e_shnum; k++, shoff += elf->e_shentsize) {
+                                                ^
+../../../../src/main/cpp/common/fake_dlfcn.c:104:9: error: use of undeclared identifier 'Elf_Shdr'
+        Elf_Shdr *sh = (Elf_Shdr *) shoff;
+        ^
+../../../../src/main/cpp/common/fake_dlfcn.c:104:19: error: use of undeclared identifier 'sh'
+        Elf_Shdr *sh = (Elf_Shdr *) shoff;
+                  ^
+../../../../src/main/cpp/common/fake_dlfcn.c:104:35: error: expected expression
+        Elf_Shdr *sh = (Elf_Shdr *) shoff;
+                                  ^
+../../../../src/main/cpp/common/fake_dlfcn.c:104:25: error: use of undeclared identifier 'Elf_Shdr'
+        Elf_Shdr *sh = (Elf_Shdr *) shoff;
+                        ^
+../../../../src/main/cpp/common/fake_dlfcn.c:107:17: error: use of undeclared identifier 'sh'
+        switch (sh->sh_type) {
+                ^
+../../../../src/main/cpp/common/fake_dlfcn.c:111:38: error: use of undeclared identifier 'sh'
+                ctx->dynsym = malloc(sh->sh_size);
+                                     ^
+../../../../src/main/cpp/common/fake_dlfcn.c:113:47: error: use of undeclared identifier 'elf'
+                memcpy(ctx->dynsym, ((void *) elf) + sh->sh_offset, sh->sh_size);
+                                              ^
+../../../../src/main/cpp/common/fake_dlfcn.c:113:54: error: use of undeclared identifier 'sh'
+                memcpy(ctx->dynsym, ((void *) elf) + sh->sh_offset, sh->sh_size);
+                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+[2/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenTable.cpp.o
+FAILED: CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenTable.cpp.o 
+C:\Users\123\AppData\Local\Android\Sdk\ndk\21.1.6352462-2\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DEnableLOG -DQUT_STATISTIC_ENABLE -Dwechatbacktrace_EXPORTS -I../../../../src/main/cpp/external/libunwindstack -I../../../../src/main/cpp/common -I../../../../src/main/cpp/libwechatbacktrace/include -I../../../../src/main/cpp/external/libunwindstack/include -I../../../../src/main/cpp/dexfile/include -I../../../../src/main/cpp/external/libunwindstack/deps/android-base -I../../../../src/main/cpp/external/libunwindstack/deps/android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/liblzma/C -I../../../../src/main/cpp/external/libunwindstack/deps/sys_compat -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/include -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/demangle -I../../../../src/main/cpp/external/libunwindstack/deps/demangle/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++17 -fno-exceptions -frtti -fstack-protector -fvisibility=hidden -Wall -Wextra -Wexit-time-destructors -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign -MD -MT CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenTable.cpp.o -MF CMakeFiles\wechatbacktrace.dir\src\main\cpp\libwechatbacktrace\QuickenTable.cpp.o.d -o CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenTable.cpp.o -c ../../../../src/main/cpp/libwechatbacktrace/QuickenTable.cpp
+../../../../src/main/cpp/libwechatbacktrace/QuickenTable.cpp:496:25: error: cannot initialize a parameter of type 'const uint64_t *' (aka 'const unsigned long long *') with an lvalue of type 'const wechat_backtrace::uptr *' (aka 'const unsigned int *')
+        return Decode64(instructions, amount, start_pos);
+                        ^~~~~~~~~~~~
+../../../../src/main/cpp/libwechatbacktrace/QuickenTable.cpp:294:64: note: passing argument to parameter 'instructions' here
+    inline QutErrorCode QuickenTable::Decode64(const uint64_t *instructions, const size_t amount,
+                                                               ^
+1 error generated.
+[3/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenMemory.cpp.o
+[4/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenInterface.cpp.o
+[5/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenInMemory.cpp.o
+[6/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenTableManager.cpp.o
+[7/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenJNI.cpp.o
+[8/106] Building CXX object CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QuickenUnwinder.cpp.o
+ninja: build stopped: subcommand failed.

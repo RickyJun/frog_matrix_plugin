@@ -56,4 +56,5 @@ dependencies {
     implementation group: "com.tencent.matrix", name: "matrix-android-commons", version: MATRIX_VERSION, changing: true
 	implementation project(":matrix-trace-canary")
     implementation project(":matrix-backtrace")
+	implementation project(":matrix-hooks")
 }

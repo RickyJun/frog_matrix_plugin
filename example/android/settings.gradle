@@ -1,6 +1,7 @@
 include ':app'
 include ':matrix-trace-canary'
 include ':matrix-backtrace'
+include ':matrix-hooks'
 
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()

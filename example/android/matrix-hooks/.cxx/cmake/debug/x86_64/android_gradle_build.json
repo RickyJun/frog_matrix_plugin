@@ -1,0 +1,202 @@
+{
+  "stringTable": {
+    "0": "E:/personal_proj/frog_matrix_plugin/example/android/matrix-hooks/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -Dmatrix_hookcommon_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include/backtrace -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
+    "2": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -Dmatrix_memoryhook_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include/backtrace -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
+    "3": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -Dmatrix_pthreadhook_EXPORTS -I../../../../src/main/cpp -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include/backtrace -IE:/personal_proj/frog_matrix_plugin/example/build/matrix-hooks/intermediates/native_deps/extracted_native_dependencies/include/backtrace/common -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -fno-rtti -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector",
+    "4": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -I../../../../src/main/cpp/external/libcJSON -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "5": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/123/AppData/Local/Android/Sdk/ndk/21.1.6352462-2/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DEnableLOG -I../../../../src/main/cpp/external/fastunwind -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Werror -fvisibility=hidden"
+  },
+  "buildFiles": [
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\CMakeLists.txt",
+    "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\build\\cmake\\platforms.cmake",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\external\\libcJSON\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\external\\fastunwind\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "matrix-memoryhook-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" matrix-memoryhook",
+      "buildType": "debug",
+      "toolchain": "1101499938",
+      "abi": "x86_64",
+      "artifactName": "matrix-memoryhook",
+      "files": [
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\GCSemiSpaceTrimmer.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\GCSemiSpaceTrimmerJNI.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryHookJNI.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryHook.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryBufferQueue.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\MemoryHookFunctions.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\WVPreAllocTrimmer.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\memory\\WVPreAllocHookJNI.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-memoryhook.so",
+      "runtimeFiles": [
+        "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-hookcommon.so"
+      ]
+    },
+    "matrix-hookcommon-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" matrix-hookcommon",
+      "buildType": "debug",
+      "toolchain": "1101499938",
+      "abi": "x86_64",
+      "artifactName": "matrix-hookcommon",
+      "files": [
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\JNICommon.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\HookCommon.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\ReentrantPrevention.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\Log.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\Maps.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\SoLoadMonitor.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\common\\ProfileRecord.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-hookcommon.so",
+      "runtimeFiles": []
+    },
+    "cJSON-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" cJSON",
+      "buildType": "debug",
+      "toolchain": "1101499938",
+      "abi": "x86_64",
+      "artifactName": "cJSON",
+      "files": [
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\external\\libcJSON\\cJSON.c",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\\src\\main\\cpp\\external\\libcJSON\\libcJSON.a"
+    },
+    "fastunwind-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" fastunwind",
+      "buildType": "debug",
+      "toolchain": "1101499938",
+      "abi": "x86_64",
+      "artifactName": "fastunwind",
+      "files": [
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\external\\fastunwind\\FastUnwind.cpp",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\\src\\main\\cpp\\external\\fastunwind\\libfastunwind.a"
+    },
+    "matrix-pthreadhook-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" matrix-pthreadhook",
+      "buildType": "debug",
+      "toolchain": "1101499938",
+      "abi": "x86_64",
+      "artifactName": "matrix-pthreadhook",
+      "files": [
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\pthread\\ThreadTrace.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\pthread\\ThreadStackShink.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\pthread\\PthreadHook.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\pthread\\PthreadHookJNI.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-pthreadhook.so",
+      "runtimeFiles": [
+        "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-hookcommon.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "1101499938": {
+      "cCompilerExecutable": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

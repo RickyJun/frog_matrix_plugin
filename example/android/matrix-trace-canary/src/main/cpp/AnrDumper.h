@@ -21,7 +21,7 @@
 #ifndef LAGDETECTOR_LAG_DETECTOR_MAIN_CPP_ANRDUMPER_H_
 #define LAGDETECTOR_LAG_DETECTOR_MAIN_CPP_ANRDUMPER_H_
 
-#include "SignalHandler.h"
+#include "FlutterStackCollectSignalHandler.h"
 #include <functional>
 #include <string>
 #include <optional>
@@ -29,7 +29,7 @@
 
 namespace MatrixTracer {
 
-class AnrDumper : public SignalHandler {
+class AnrDumper : public FlutterStackCollectSignalHandler {
  public:
     AnrDumper(const char* anrTraceFile, const char* printTraceFile);
     virtual ~AnrDumper();

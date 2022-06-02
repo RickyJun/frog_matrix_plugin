@@ -1,0 +1,20 @@
+ninja: Entering directory `E:\personal_proj\frog_matrix_plugin\example\android\matrix-hooks\.cxx\cmake\debug\arm64-v8a'
+[1/19] Building CXX object CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookJNI.cpp.o
+[2/19] Building CXX object CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/WVPreAllocTrimmer.cpp.o
+[3/19] Building CXX object CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/JNICommon.cpp.o
+[4/19] Building CXX object CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/HookCommon.cpp.o
+[5/19] Building CXX object CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/ProfileRecord.cpp.o
+[6/19] Building CXX object CMakeFiles/matrix-hookcommon.dir/src/main/cpp/common/SoLoadMonitor.cpp.o
+[7/19] Building CXX object CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryBufferQueue.cpp.o
+[8/19] Building CXX object CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHookFunctions.cpp.o
+[9/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadStackShink.cpp.o
+[10/19] Linking CXX shared library E:\personal_proj\frog_matrix_plugin\example\build\matrix-hooks\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-hookcommon.so
+[11/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHook.cpp.o
+[12/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/PthreadHookJNI.cpp.o
+[13/19] Building CXX object CMakeFiles/matrix-memoryhook.dir/src/main/cpp/memory/MemoryHook.cpp.o
+[14/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/pthread/ThreadTrace.cpp.o
+[15/19] Linking CXX shared library E:\personal_proj\frog_matrix_plugin\example\build\matrix-hooks\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-memoryhook.so
+[16/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/flutter_stack_collect/FlutterStackCollectJNI.cpp.o
+[17/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/flutter_stack_collect/FlutterStackCollectSignalHandler.cpp.o
+[18/19] Building CXX object CMakeFiles/matrix-pthreadhook.dir/src/main/cpp/flutter_stack_collect/FlutterStackCollect.cpp.o
+[19/19] Linking CXX shared library E:\personal_proj\frog_matrix_plugin\example\build\matrix-hooks\intermediates\cmake\debug\obj\arm64-v8a\libmatrix-pthreadhook.so

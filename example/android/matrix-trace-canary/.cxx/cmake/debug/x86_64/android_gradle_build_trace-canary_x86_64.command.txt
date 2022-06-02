@@ -1,0 +1,7 @@
+Executable : C:\Users\123\AppData\Local\Android\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+E:\personal_proj\frog_matrix_plugin\example\android\matrix-trace-canary\.cxx\cmake\debug\x86_64
+trace-canary
+jvmArgs : 
+

@@ -3,6 +3,9 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:frog_matrix_plugin/frog_matrix_plugin.dart';
+import 'package:frog_matrix_plugin_example/backtrace_sample/backtrace_sanmple.dart';
+
+import 'drop_fps_sample.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +25,8 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
+
+    
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -49,14 +54,39 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
+      home: Builder(builder: (ctx){
+        return Scaffold(
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: ListView(
+          children: [
+            _btn("testFps",(){
+              DropFpsSample.testDropFPS(ctx);
+            }),
+            _btn("testDrop",(){
+              BacktraceSample.testDrop();
+            }),
+            _btn("testDump",(){
+              BacktraceSample.testDump();
+            }),
+            BacktraceSample.getTestWidget()
+          ],
         ),
-      ),
+      );
+      }),
     );
+  }
+  Widget _btn(String name,VoidCallback fun){
+    return Padding(padding: const EdgeInsets.only(bottom: 5),child: GestureDetector(
+      onTap: fun,
+      child: Container(height: 30,width: 100,
+    decoration: BoxDecoration(
+      color: Colors.blueAccent,
+      borderRadius: BorderRadius.circular(6)
+    ),
+    alignment: Alignment.center,
+    child: Text(name,style: const TextStyle(color: Colors.white),),),
+    ),);
   }
 }

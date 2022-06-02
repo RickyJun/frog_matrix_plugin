@@ -1,0 +1,54 @@
+{
+  "buildFiles": [
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\CMakeLists.txt",
+    "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\123\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462-2\\build\\cmake\\platforms.cmake",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\external\\libcJSON\\CMakeLists.txt",
+    "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\src\\main\\cpp\\external\\fastunwind\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "matrix-memoryhook-Debug-x86_64": {
+      "artifactName": "matrix-memoryhook",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" matrix-memoryhook",
+      "abi": "x86_64",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-memoryhook.so",
+      "runtimeFiles": [
+        "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-hookcommon.so"
+      ]
+    },
+    "matrix-hookcommon-Debug-x86_64": {
+      "artifactName": "matrix-hookcommon",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" matrix-hookcommon",
+      "abi": "x86_64",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-hookcommon.so",
+      "runtimeFiles": []
+    },
+    "cJSON-Debug-x86_64": {
+      "artifactName": "cJSON",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" cJSON",
+      "abi": "x86_64",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\\src\\main\\cpp\\external\\libcJSON\\libcJSON.a",
+      "runtimeFiles": []
+    },
+    "fastunwind-Debug-x86_64": {
+      "artifactName": "fastunwind",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" fastunwind",
+      "abi": "x86_64",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\\src\\main\\cpp\\external\\fastunwind\\libfastunwind.a",
+      "runtimeFiles": []
+    },
+    "matrix-pthreadhook-Debug-x86_64": {
+      "artifactName": "matrix-pthreadhook",
+      "buildCommand": "C:\\Users\\123\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\personal_proj\\frog_matrix_plugin\\example\\android\\matrix-hooks\\.cxx\\cmake\\debug\\x86_64\" matrix-pthreadhook",
+      "abi": "x86_64",
+      "output": "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-pthreadhook.so",
+      "runtimeFiles": [
+        "E:\\personal_proj\\frog_matrix_plugin\\example\\build\\matrix-hooks\\intermediates\\cmake\\debug\\obj\\x86_64\\libmatrix-hookcommon.so"
+      ]
+    }
+  }
+}

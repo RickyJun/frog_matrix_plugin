@@ -1,0 +1,11 @@
+# ninja log v5
+0	11	0	clean	4af852cfa21104b3
+16	21532	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/Utils.cpp.o	45e800e009921d87
+677	21544	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/Log.cpp.o	73790716b8f7334a
+384	21545	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/LogExt.cpp.o	a23f6c494df7d1c4
+183	21556	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/common/PthreadExt.cpp.o	e1ba17cf12698326
+580	22272	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/DwarfEhFrameWithHdrDecoder.cpp.o	f55825d51f34c324
+691	22277	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/QutStatistics.cpp.o	103361b2b06f545f
+693	22288	675274748	CMakeFiles/wechatbacktrace.dir/src/main/cpp/libwechatbacktrace/DwarfSectionDecoder.cpp.o	743d8e37d2166a5b
+0	27	0	clean	4af852cfa21104b3
+0	11	0	clean	4af852cfa21104b3

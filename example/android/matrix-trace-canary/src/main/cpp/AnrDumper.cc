@@ -16,7 +16,7 @@
 
 // Author: leafjia@tencent.com
 //
-// SignalHandler.cpp
+// FlutterStackCollectSignalHandler.cpp
 
 #include "AnrDumper.h"
 

@@ -143,6 +143,7 @@ class WarmUpUtility {
         }
 
         File savingPath = new File(configuration.mSavingPath);
+
         try {
             if (savingPath.getCanonicalPath().startsWith(
                     configuration.mContext.getFilesDir().getParentFile()

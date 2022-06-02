@@ -5,6 +5,9 @@ import com.example.frog_matrix_plugin.matrix.DynamicConfigImpl
 import com.example.frog_matrix_plugin.matrix.FrogMatrixPluginListener
 import com.tencent.matrix.Matrix
 import com.tencent.matrix.backtrace.WeChatBacktrace
+import com.tencent.matrix.hook.FlutterStackCollect
+import com.tencent.matrix.hook.memory.MemoryHook
+import com.tencent.matrix.hook.pthread.PthreadHook
 import com.tencent.matrix.trace.TracePlugin
 import com.tencent.matrix.trace.config.TraceConfig
 
@@ -30,35 +33,46 @@ class FrogMatrixPlugin: FlutterPlugin, MethodCallHandler,ActivityAware {
 
   }
   private fun initMatrix(){
-    val builder: Matrix.Builder =  Matrix.Builder(activityPluginBinding!!.activity.application) // build matrix
-
-    builder.pluginListener(FrogMatrixPluginListener(activityPluginBinding!!.activity.applicationContext)) // add general pluginListener
-
-    val dynamicConfig = DynamicConfigImpl() // dynamic config
-
-    // init plugin
-    val traceCanaryPlugin = TracePlugin(
-      TraceConfig.Builder()
-        .dynamicConfig(dynamicConfig)
-        .enableEvilMethodTrace(true)
-        .enableFPS(true)
-        .enableEvilMethodTrace(true)
-        .build()
-    )
-    //add to matrix
-    builder.plugin(traceCanaryPlugin)
-    //init matrix
-    Matrix.init(builder.build())
-    // start plugin
-    traceCanaryPlugin.start()
+//    val builder: Matrix.Builder =  Matrix.Builder(activityPluginBinding!!.activity.application) // build matrix
+//
+//    builder.pluginListener(FrogMatrixPluginListener(activityPluginBinding!!.activity.applicationContext)) // add general pluginListener
+//
+//    val dynamicConfig = DynamicConfigImpl() // dynamic config
+//
+//    // init plugin
+//    val traceCanaryPlugin = TracePlugin(
+//      TraceConfig.Builder()
+//        .dynamicConfig(dynamicConfig)
+//        .enableEvilMethodTrace(true)
+//        .enableFPS(true)
+//        .enableEvilMethodTrace(true)
+//        .build()
+//    )
+//    //add to matrix
+//    builder.plugin(traceCanaryPlugin)
+//    //init matrix
+//    Matrix.init(builder.build())
+//    // start plugin
+//    traceCanaryPlugin.start()
     //Backtrace
-    WeChatBacktrace.instance().configure(activityPluginBinding!!.activity.applicationContext).commit();
+    PthreadHook.INSTANCE.setThreadTraceEnabled(true);
+    PthreadHook.INSTANCE.hook();
+    FlutterStackCollect.startCollect();
+//    WeChatBacktrace.instance().configure(activityPluginBinding!!.activity.applicationContext)
+//      .enableOtherProcessLogger(true).savingPath(activityPluginBinding!!.activity.applicationContext?.filesDir?.parentFile
+//        ?.canonicalFile?.absolutePath +"/matric_yesdesk/stackData")
+//      .setBacktraceMode(WeChatBacktrace.Mode.Fp).commit();
+
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } else {
+    }else if(call.method == "testDump") {
+      var path:String = call.arguments as String;
+      PthreadHook.INSTANCE.startFlutterTrace(path);
+      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    }  else {
       result.notImplemented()
     }
   }

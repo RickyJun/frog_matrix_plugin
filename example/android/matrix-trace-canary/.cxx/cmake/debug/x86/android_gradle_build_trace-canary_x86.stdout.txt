@@ -1,0 +1,8 @@
+ninja: Entering directory `E:\personal_proj\frog_matrix_plugin\example\android\matrix-trace-canary\.cxx\cmake\debug\x86'
+[1/7] Building CXX object CMakeFiles/trace-canary.dir/src/main/cpp/nativehelper/managed_jnienv.cc.o
+[2/7] Building CXX object CMakeFiles/trace-canary.dir/src/main/cpp/Support.cc.o
+[3/7] Building CXX object CMakeFiles/trace-canary.dir/src/main/cpp/TouchEventTracer.cc.o
+[4/7] Building CXX object CMakeFiles/trace-canary.dir/src/main/cpp/SignalHandler.cc.o
+[5/7] Building CXX object CMakeFiles/trace-canary.dir/src/main/cpp/AnrDumper.cc.o
+[6/7] Building CXX object CMakeFiles/trace-canary.dir/src/main/cpp/MatrixTracer.cc.o
+[7/7] Linking CXX shared library E:\personal_proj\frog_matrix_plugin\example\build\matrix-trace-canary\intermediates\cmake\debug\obj\x86\libtrace-canary.so

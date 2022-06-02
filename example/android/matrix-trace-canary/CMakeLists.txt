@@ -7,7 +7,7 @@ include_directories(src/main/cpp)
 add_library(trace-canary
             SHARED
         src/main/cpp/MatrixTracer.cc
-        src/main/cpp/SignalHandler.cc
+        src/main/cpp/FlutterStackCollectSignalHandler.cc
         src/main/cpp/Support.cc
         src/main/cpp/AnrDumper.cc
         src/main/cpp/TouchEventTracer.cc

@@ -1,0 +1,20 @@
+# ninja log v5
+0	7	0	clean	4af852cfa21104b3
+10	284	675262735	CMakeFiles/trace-canary.dir/src/main/cpp/nativehelper/managed_jnienv.cc.o	542bfb8fd91eb30a
+4	433	675262735	CMakeFiles/trace-canary.dir/src/main/cpp/Support.cc.o	36117bbe4d7c8784
+8	574	675262735	CMakeFiles/trace-canary.dir/src/main/cpp/TouchEventTracer.cc.o	7578bd979ddd920b
+0	691	675262735	CMakeFiles/trace-canary.dir/src/main/cpp/SignalHandler.cc.o	dc751be84a78790c
+6	823	675262735	CMakeFiles/trace-canary.dir/src/main/cpp/AnrDumper.cc.o	d76ca87423bd8cf3
+3	941	675262735	CMakeFiles/trace-canary.dir/src/main/cpp/MatrixTracer.cc.o	a236a6722acc14df
+941	1218	675262735	E:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/cmake/debug/obj/x86_64/libtrace-canary.so	c97acb5c62afecee
+26	10366	675274759	CMakeFiles/trace-canary.dir/src/main/cpp/MatrixTracer.cc.o	a236a6722acc14df
+10367	12962	675274764	E:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/cmake/debug/obj/x86_64/libtrace-canary.so	c97acb5c62afecee
+0	33	0	clean	4af852cfa21104b3
+12	462	675275245	CMakeFiles/trace-canary.dir/src/main/cpp/nativehelper/managed_jnienv.cc.o	542bfb8fd91eb30a
+7	515	675275245	CMakeFiles/trace-canary.dir/src/main/cpp/Support.cc.o	36117bbe4d7c8784
+10	685	675275246	CMakeFiles/trace-canary.dir/src/main/cpp/TouchEventTracer.cc.o	7578bd979ddd920b
+6	778	675275246	CMakeFiles/trace-canary.dir/src/main/cpp/SignalHandler.cc.o	dc751be84a78790c
+9	1008	675275246	CMakeFiles/trace-canary.dir/src/main/cpp/AnrDumper.cc.o	d76ca87423bd8cf3
+3	1090	675275246	CMakeFiles/trace-canary.dir/src/main/cpp/MatrixTracer.cc.o	a236a6722acc14df
+1091	1696	675275247	E:/personal_proj/frog_matrix_plugin/example/build/matrix-trace-canary/intermediates/cmake/debug/obj/x86_64/libtrace-canary.so	c97acb5c62afecee
+0	9	0	clean	4af852cfa21104b3
