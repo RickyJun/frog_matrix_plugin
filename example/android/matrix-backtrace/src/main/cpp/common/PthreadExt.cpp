@@ -97,15 +97,18 @@ int BACKTRACE_FUNC_WRAPPER(pthread_getattr_ext)(pthread_t pthread, pthread_attr_
     auto local_attr = (pthread_attr_t *) (pthread_getspecific(m_attr_key));
 
     if (!local_attr) {
-        local_attr = (pthread_attr_t *) malloc(sizeof(pthread_attr_t));
-        ret = pthread_getattr_np(pthread, local_attr);
-        pthread_setspecific(m_attr_key, local_attr);
-    }
+        try{
+            local_attr = (pthread_attr_t *) malloc(sizeof(pthread_attr_t));
+            ret = pthread_getattr_np(pthread, local_attr);
+            pthread_setspecific(m_attr_key, local_attr);
+        }catch (...){
+            ret = -1;
+        }
 
+    }
     if (ret == 0) {
         *attr = *local_attr;
     }
-
     return ret;
 }
 

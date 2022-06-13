@@ -70,8 +70,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
 
     testImplementation 'junit:junit:4.12'
-    //implementation project(':matrix-android-lib')
-    //implementation project(':matrix-android-commons')
 	implementation group: "com.tencent.matrix", name: "matrix-android-lib", version: MATRIX_VERSION, changing: true
     implementation group: "com.tencent.matrix", name: "matrix-android-commons", version: MATRIX_VERSION, changing: true
 }

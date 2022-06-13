@@ -38,7 +38,8 @@ target_include_directories(
 target_compile_options(
       ${TARGET}
       PUBLIC $<$<COMPILE_LANGUAGE:C>:-std=c99>
-      PUBLIC $<$<COMPILE_LANGUAGE:CXX>:-std=c++17 -fno-exceptions -fno-rtti>
+	  #PUBLIC $<$<COMPILE_LANGUAGE:CXX>:-std=c++17 -fno-exceptions -fno-rtti>
+      PUBLIC $<$<COMPILE_LANGUAGE:CXX>:-std=c++17 -fexceptions -frtti>
       PUBLIC -fdata-sections -ffunction-sections -fvisibility=hidden -fstack-protector
 )
 

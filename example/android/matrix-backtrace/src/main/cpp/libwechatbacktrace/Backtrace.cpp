@@ -27,10 +27,12 @@
 #include <cxxabi.h>
 #include <DebugDexFiles.h>
 #include <PthreadExt.h>
-
+#include <sys/ptrace.h>
+#define PTRACE_GETREGSET 0x4204
 #define WECHAT_BACKTRACE_TAG "Wechat.Backtrace"
 
 namespace wechat_backtrace {
+
 
     QUT_EXTERN_C_BLOCK
 
@@ -45,6 +47,12 @@ namespace wechat_backtrace {
     static const bool m_is_arm32 = true;
 #endif
 
+    struct backtrace_regs_struct {
+        uint64_t regs[31];
+        uint64_t sp;
+        uint64_t pc;
+        uint64_t pstate;
+    };
     BACKTRACE_EXPORT
     BacktraceMode get_backtrace_mode() {
         return backtrace_mode;
@@ -293,6 +301,11 @@ namespace wechat_backtrace {
         GetFramePointerMinimalRegs(regs);
         FpUnwind(regs, frames, max_frames, frame_size);
     }
+    static inline void
+    fp_based_unwind_inlined(Frame *frames,const uptr *regs,pthread_t pthread, const size_t max_frames,
+                            size_t &frame_size) {
+        FpUnwind(regs,pthread, frames, max_frames, frame_size);
+    }
 
     static inline void
     dwarf_based_unwind_inlined(Frame *frames, const size_t max_frames,
@@ -332,6 +345,21 @@ namespace wechat_backtrace {
         dwarf_based_unwind_inlined(frames, max_frames, frame_size);
     }
 
+    BACKTRACE_EXPORT void
+    BACKTRACE_FUNC_WRAPPER(unwind_pthread_adapter)(Frame *frames,uptr *regs,pthread_t pthread, const size_t max_frames,
+                                           size_t &frame_size) {
+        switch (get_backtrace_mode()) {
+            case FramePointer:
+                fp_based_unwind_inlined(frames,regs,pthread, max_frames, frame_size);
+                break;
+            case Quicken:
+                quicken_based_unwind_inlined(frames, max_frames, frame_size);
+                break;
+            case DwarfBased:
+                dwarf_based_unwind_inlined(frames, max_frames, frame_size);
+                break;
+        }
+    }
     BACKTRACE_EXPORT void
     BACKTRACE_FUNC_WRAPPER(unwind_adapter)(Frame *frames, const size_t max_frames,
                                            size_t &frame_size) {

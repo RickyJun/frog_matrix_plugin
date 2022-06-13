@@ -27,3 +27,6 @@
 .dart_tool/
 .packages
 build/
+example/android/matrix-hooks/.cxx/
+example/android/matrix-backtrace/.cxx/
+example/android/matrix-trace-canary/.cxx/

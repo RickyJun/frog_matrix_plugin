@@ -18,6 +18,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import java.io.File
 
 /** FrogMatrixPlugin */
 class FrogMatrixPlugin: FlutterPlugin, MethodCallHandler,ActivityAware {
@@ -71,6 +72,16 @@ class FrogMatrixPlugin: FlutterPlugin, MethodCallHandler,ActivityAware {
     }else if(call.method == "testDump") {
       var path:String = call.arguments as String;
       PthreadHook.INSTANCE.startFlutterTrace(path);
+      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    } else if(call.method == "testReport") {
+      var path:String = call.arguments as String;
+      var res = FlutterStackCollect.report();
+      var file: File = File(path)
+      if(file.exists()){
+        file.delete()
+      }
+      file.createNewFile()
+      file.writeText(res)
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
     }  else {
       result.notImplemented()

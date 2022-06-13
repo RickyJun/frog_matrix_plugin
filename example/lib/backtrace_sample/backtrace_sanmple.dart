@@ -15,6 +15,10 @@ class BacktraceSample{
     _content.value = await FrogMatrixPlugin.testDump(7);
     _index.value = 1;
   }
+   static void testReport()async{
+    _content.value = await FrogMatrixPlugin.testReport(7);
+    _index.value = 1;
+  }
   static void testDrop()async{
     _index.value = 0;
   }

@@ -707,6 +707,7 @@ static void on_pthread_release(pthread_t pthread) {
     if (meta.exited) { // for pthread_join, it is always true. for pthread_detach, it is more likely to be false and do erase when routine exited
         erase_meta(m_pthread_metas, pthread, meta);
     }
+    wechat_backtrace::FlutterStackCollect::on_pthread_release(pthread);
     LOGD(TAG, "on_pthread_release end");
 }
 

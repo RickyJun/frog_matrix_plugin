@@ -25,8 +25,8 @@ jclass clazz) {
 
 JNIEXPORT jstring JNICALL
 Java_com_tencent_matrix_hook_FlutterStackCollect_report(JNIEnv *env, jclass clazz) {
-    char* reportStr = wechat_backtrace::FlutterStackCollect::Report();
-    return strToJstring(env,reportStr);
+    char* reportStr = wechat_backtrace::FlutterStackCollect::DumpJson2File();
+    return strToJstring(env,reportStr?reportStr:"empty");
 }
 
 JNIEXPORT void JNICALL

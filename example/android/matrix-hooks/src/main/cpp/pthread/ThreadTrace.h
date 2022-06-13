@@ -22,6 +22,7 @@
 #define LIBMATRIX_HOOK_THREADTRACE_H
 
 #include <pthread.h>
+#include <string.h>
 #include <common/HookCommon.h>
 #include "PthreadHook.h"
 #include <backtrace/Backtrace.h>
@@ -65,7 +66,8 @@ struct pthread_meta_t {
 
     pthread_meta_t& operator=(const pthread_meta_t &src){
         this->tid              = src.tid;
-        this->thread_name      = src.thread_name;
+        this->thread_name = new char[256];
+        std::strcpy(this->thread_name,src.thread_name);
 //        parent_name       = src.parent_name;
         this->unwind_mode      = src.unwind_mode;
         this->hash             = src.hash;

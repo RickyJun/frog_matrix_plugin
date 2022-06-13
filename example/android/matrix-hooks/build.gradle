@@ -20,6 +20,7 @@ android {
         externalNativeBuild {
             cmake {
                 arguments = ["-DEnableLOG=${ENABLE_LOG ? "ON" : "OFF"}" as String]
+                cppFlags "-std=gnu++11 -frtti -fexceptions"
             }
 
             exportHeaders {

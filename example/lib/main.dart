@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:frog_matrix_plugin/frog_matrix_plugin.dart';
+import 'package:frog_matrix_plugin_example/backtrace_sample/DumpContentPage.dart';
 import 'package:frog_matrix_plugin_example/backtrace_sample/backtrace_sanmple.dart';
 
 import 'drop_fps_sample.dart';
@@ -53,6 +54,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       home: Builder(builder: (ctx){
         return Scaffold(
@@ -61,14 +63,27 @@ class _MyAppState extends State<MyApp> {
         ),
         body: ListView(
           children: [
-            _btn("testFps",(){
-              DropFpsSample.testDropFPS(ctx);
+            // _btn("testFps",(){
+            //   DropFpsSample.testDropFPS(ctx);
+            // }),
+            // _btn("testDrop",(){
+            //   BacktraceSample.testDrop();
+            // }),
+            // _btn("testDump",(){
+            //   BacktraceSample.testDump();
+            // }),
+            _btn("testReport",(){
+              DumpContentPage.startEveMethod();
+              BacktraceSample.testReport();
+              DumpContentPage.startEveMethod();
             }),
-            _btn("testDrop",(){
-              BacktraceSample.testDrop();
-            }),
-            _btn("testDump",(){
-              BacktraceSample.testDump();
+            _btn("testReport2",(){
+              for(int i = 0 ; i < 10000; i++){
+                print("fucccccc");
+              }
+              //DumpContentPage.startEveMethod2();
+              BacktraceSample.testReport();
+              //DumpContentPage.startEveMethod2();
             }),
             BacktraceSample.getTestWidget()
           ],
