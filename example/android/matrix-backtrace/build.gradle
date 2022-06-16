@@ -50,6 +50,11 @@ android {
             //TODO wenwenjun
             //consumerProguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        profile {
+            minifyEnabled false
+            //TODO wenwenjun
+            //consumerProguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
         debug {
             jniDebuggable true
         }

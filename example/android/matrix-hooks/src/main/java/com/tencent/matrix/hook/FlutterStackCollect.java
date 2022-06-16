@@ -7,9 +7,10 @@ public class FlutterStackCollect {
     public static native void startCollect();
 
     @Keep
-    public static native String report();
+    public static native String report(long timestamp);
 
     @Keep
     public static native void endCollect();
 
 }
+

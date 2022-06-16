@@ -24,8 +24,9 @@ jclass clazz) {
 }
 
 JNIEXPORT jstring JNICALL
-Java_com_tencent_matrix_hook_FlutterStackCollect_report(JNIEnv *env, jclass clazz) {
-    char* reportStr = wechat_backtrace::FlutterStackCollect::DumpJson2File();
+Java_com_tencent_matrix_hook_FlutterStackCollect_report(JNIEnv *env, jclass clazz,jlong timestamp) {
+    time_t timestampT = (time_t)timestamp;
+    char* reportStr = wechat_backtrace::FlutterStackCollect::DumpJson2File(timestampT);
     return strToJstring(env,reportStr?reportStr:"empty");
 }
 

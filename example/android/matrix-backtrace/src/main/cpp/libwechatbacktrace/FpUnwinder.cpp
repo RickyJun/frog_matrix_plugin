@@ -107,14 +107,14 @@ namespace wechat_backtrace {
     }
 
     void
-    FpUnwind(const uptr *regs,pthread_t pthread, Frame *backtrace, const size_t max_size, size_t &frame_size) {
-        pthread_attr_t attr;
-        int ret = BACKTRACE_FUNC_WRAPPER(pthread_getattr_ext)(pthread, &attr);
-        if(ret != 0){
-            return;
-        }
-        uptr stack_bottom = reinterpret_cast<uptr>(attr.stack_base);
-        uptr stack_top = reinterpret_cast<uptr>(attr.stack_base) + attr.stack_size;
+    FpUnwind(const uptr *regs,struct sigaltstack &stack,pthread_t pthread, Frame *backtrace, const size_t max_size, size_t &frame_size) {
+        //pthread_attr_t attr;
+        //int ret = BACKTRACE_FUNC_WRAPPER(pthread_getattr_ext)(pthread, &attr);
+//        if(ret != 0){
+//            return;
+//        }
+        uptr stack_bottom = reinterpret_cast<uptr>(stack.ss_sp);
+        uptr stack_top = reinterpret_cast<uptr>(stack.ss_sp) + stack.ss_size;
 
         uptr fp = regs[29]; // x29 or r7
         uptr pc = regs[30]; // x32 or r15

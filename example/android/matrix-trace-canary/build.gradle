@@ -50,6 +50,10 @@ android {
             minifyEnabled false
             consumerProguardFiles 'proguard-rules.pro'
         }
+        profile {
+            minifyEnabled false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
         debug {
             jniDebuggable true
         }

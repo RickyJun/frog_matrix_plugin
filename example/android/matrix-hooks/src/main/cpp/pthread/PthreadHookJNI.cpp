@@ -134,7 +134,7 @@ Java_com_tencent_matrix_hook_pthread_PthreadHook_startFlutterTraceNative(JNIEnv 
                                                                          jstring jpath) {
     if (jpath) {
         const char *path = env->GetStringUTFChars(jpath, NULL);
-        pthread_dump_flutter_json(path);
+        //pthread_dump_flutter_json(path);
         env->ReleaseStringUTFChars(jpath, path);
     }
 }

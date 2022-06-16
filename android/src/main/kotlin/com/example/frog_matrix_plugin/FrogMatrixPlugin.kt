@@ -1,5 +1,6 @@
 package com.example.frog_matrix_plugin
 
+import android.util.Log
 import androidx.annotation.NonNull
 import com.example.frog_matrix_plugin.matrix.DynamicConfigImpl
 import com.example.frog_matrix_plugin.matrix.FrogMatrixPluginListener
@@ -19,6 +20,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import java.io.File
+import java.util.*
 
 /** FrogMatrixPlugin */
 class FrogMatrixPlugin: FlutterPlugin, MethodCallHandler,ActivityAware {
@@ -58,32 +60,57 @@ class FrogMatrixPlugin: FlutterPlugin, MethodCallHandler,ActivityAware {
     //Backtrace
     PthreadHook.INSTANCE.setThreadTraceEnabled(true);
     PthreadHook.INSTANCE.hook();
-    FlutterStackCollect.startCollect();
+
+
+
 //    WeChatBacktrace.instance().configure(activityPluginBinding!!.activity.applicationContext)
 //      .enableOtherProcessLogger(true).savingPath(activityPluginBinding!!.activity.applicationContext?.filesDir?.parentFile
 //        ?.canonicalFile?.absolutePath +"/matric_yesdesk/stackData")
 //      .setBacktraceMode(WeChatBacktrace.Mode.Fp).commit();
 
   }
+  fun getUIThread():Long?{
+    var allStackTraces:Map<Thread, Array<StackTraceElement>> = Thread.getAllStackTraces()
+    Log.d("TAG", "线程总数：" + allStackTraces.size);
+    for (stackTrace in allStackTraces.entries) {
+      var thread:Thread  = stackTrace.key
+      if(thread.name.contains(".ui")){
+        return thread.id
+      }
+     // Log.d("TAG", "线程：" + thread.getName() + ",id=" + thread.getId() + ",state=" + thread.getState());
+//      var stack:Array<StackTraceElement>  = stackTrace.value
+//      var strStackTrace:String  = "堆栈：";
+//      for (stackTraceElement in stack) {
+//      strStackTrace += stackTraceElement.toString() + "\n";
+//    }
+    }
+    return null
+  }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    }else if(call.method == "testDump") {
-      var path:String = call.arguments as String;
-      PthreadHook.INSTANCE.startFlutterTrace(path);
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } else if(call.method == "testReport") {
-      var path:String = call.arguments as String;
-      var res = FlutterStackCollect.report();
-      var file: File = File(path)
+//    if (call.method == "getPlatformVersion") {
+//      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+//    }else if(call.method == "testDump") {
+//      var path:String = call.arguments as String;
+//      PthreadHook.INSTANCE.startFlutterTrace(path);
+//      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+//    } else
+      if(call.method == "reportToFile") {
+      val args:List<Any> = call.arguments as List<Any>;
+      val path:String = args[0] as String;
+      val timestamp:Long = args[1] as Long;
+      val res = FlutterStackCollect.report(timestamp);
+      val file = File(path)
       if(file.exists()){
         file.delete()
       }
       file.createNewFile()
       file.writeText(res)
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    }  else {
+      result.success("ok")
+    }else if(call.method == "startCollect") {
+      FlutterStackCollect.startCollect();
+      result.success("ok")
+    }   else {
       result.notImplemented()
     }
   }

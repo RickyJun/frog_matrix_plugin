@@ -1,3 +1,0 @@
-E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
-E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a/CMakeFiles/trace-canary.dir
-E:/personal_proj/frog_matrix_plugin/example/android/matrix-trace-canary/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir

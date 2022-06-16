@@ -22,11 +22,11 @@ class _dropTestPageState extends State<dropTestPage>{
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-              width: 375,height: 1000,child: Stack(
+              width: 375,height: 375,child: Stack(
               children:getTestWidget() ,
             ));
   }
-  static int testNum = 7000;
+  static int testNum = 100;
   static List<_Offset> positons = List.generate(testNum, (index) => _Offset(Random().nextInt(300)*1.0,Random().nextInt(1000)*1.0));
   static List<Positioned> getTestWidget(){
     for (var element in positons) { 

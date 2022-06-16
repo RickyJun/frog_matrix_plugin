@@ -32,14 +32,16 @@
             "cwd": "example",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "flutterMode": "profile",
+            "args": ["--extra-gen-snapshot-options=--no-strip"]
         },
         {
             "name": "example (release mode)",
             "cwd": "example",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "flutterMode": "release",
+            "args": ["--extra-gen-snapshot-options=--no-strip"]
         }
     ]
 }

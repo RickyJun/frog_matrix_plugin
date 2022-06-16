@@ -96,8 +96,8 @@ namespace thread_trace {
     void add_hook_thread_name(const char *regex_str);
 
     void pthread_dump_json(const char *path);
-    //wenwenjun add
-    void pthread_dump_flutter_json(const char *path);
+    //TODO wenwenjun add
+    //void pthread_dump_flutter_json(const char *path);
 
     void enable_quicken_unwind(const bool enable);
 

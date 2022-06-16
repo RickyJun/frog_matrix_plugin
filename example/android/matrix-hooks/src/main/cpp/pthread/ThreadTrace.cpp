@@ -649,7 +649,7 @@ void thread_trace::enable_trace_pthread_release(const bool enable) {
     m_trace_pthread_release = enable;
 }
 //todo wenwenjun
-void thread_trace::pthread_dump_flutter_json(const char *path) {
+/*void thread_trace::pthread_dump_flutter_json(const char *path) {
     LOGD(TAG,
          ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> pthread dump json begin <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
     pthread_meta_lock meta_lock(m_pthread_meta_mutex);
@@ -664,7 +664,7 @@ void thread_trace::pthread_dump_flutter_json(const char *path) {
 
     LOGD(TAG,
          ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> pthread dump json end <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-}
+}*/
 void thread_trace::pthread_dump_json(const char *path) {
 
     LOGD(TAG,

@@ -302,9 +302,11 @@ namespace wechat_backtrace {
         FpUnwind(regs, frames, max_frames, frame_size);
     }
     static inline void
-    fp_based_unwind_inlined(Frame *frames,const uptr *regs,pthread_t pthread, const size_t max_frames,
+    fp_based_unwind_inlined(Frame *frames,const uptr *regs,struct sigaltstack &stack,pthread_t pthread, const size_t max_frames,
                             size_t &frame_size) {
-        FpUnwind(regs,pthread, frames, max_frames, frame_size);
+//        uptr regs2[FP_MINIMAL_REG_SIZE];
+//        GetFramePointerMinimalRegs(regs2);
+        FpUnwind(regs,stack,pthread, frames, max_frames, frame_size);
     }
 
     static inline void
@@ -346,11 +348,11 @@ namespace wechat_backtrace {
     }
 
     BACKTRACE_EXPORT void
-    BACKTRACE_FUNC_WRAPPER(unwind_pthread_adapter)(Frame *frames,uptr *regs,pthread_t pthread, const size_t max_frames,
+    BACKTRACE_FUNC_WRAPPER(unwind_pthread_adapter)(Frame *frames,uptr *regs,struct sigaltstack &stack,pthread_t pthread, const size_t max_frames,
                                            size_t &frame_size) {
         switch (get_backtrace_mode()) {
             case FramePointer:
-                fp_based_unwind_inlined(frames,regs,pthread, max_frames, frame_size);
+                fp_based_unwind_inlined(frames,regs,stack,pthread, max_frames, frame_size);
                 break;
             case Quicken:
                 quicken_based_unwind_inlined(frames, max_frames, frame_size);

@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 import 'package:frog_matrix_plugin/frog_matrix_plugin.dart';
 import 'package:frog_matrix_plugin_example/backtrace_sample/DumpContentPage.dart';
 import 'package:frog_matrix_plugin_example/backtrace_sample/backtrace_sanmple.dart';
-
 import 'drop_fps_sample.dart';
 
 void main() {
@@ -25,41 +24,24 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    initPlatformState();
-
+    //initPlatformState();
+    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) { 
+        Timer.periodic(const Duration(milliseconds: 16), (timer) { 
+          _platformVersion =  "${DateTime.now().millisecondsSinceEpoch}";
+            setState(() {
+              
+            });
+        });
+    });
     
   }
-
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
-    try {
-      platformVersion =
-          await FrogMatrixPlugin.platformVersion ?? 'Unknown platform version';
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-      _platformVersion = platformVersion;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
       home: Builder(builder: (ctx){
         return Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: Text('Plugin example app $_platformVersion'),
         ),
         body: ListView(
           children: [
@@ -72,20 +54,19 @@ class _MyAppState extends State<MyApp> {
             // _btn("testDump",(){
             //   BacktraceSample.testDump();
             // }),
-            _btn("testReport",(){
-              DumpContentPage.startEveMethod();
-              BacktraceSample.testReport();
-              DumpContentPage.startEveMethod();
+            // _btn("testReport",(){
+            //   DumpContentPage.startEveMethod();
+            //   BacktraceSample.testReport();
+            //   DumpContentPage.startEveMethod();
+            // }),
+            _btn("startCollect",(){
+              BacktraceSample.testStartCollect();
             }),
-            _btn("testReport2",(){
-              for(int i = 0 ; i < 10000; i++){
-                print("fucccccc");
-              }
-              //DumpContentPage.startEveMethod2();
+            _btn("report",(){
               BacktraceSample.testReport();
-              //DumpContentPage.startEveMethod2();
             }),
-            BacktraceSample.getTestWidget()
+            BacktraceSample.getTestWidget1(),
+            BacktraceSample.getTestWidget2()
           ],
         ),
       );

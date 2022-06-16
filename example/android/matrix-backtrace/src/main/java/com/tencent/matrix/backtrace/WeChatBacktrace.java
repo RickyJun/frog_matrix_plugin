@@ -117,15 +117,15 @@ public class WeChatBacktrace {
     private void startScheduleQutGenerationRequests() {
         if (mScheduleQutGenerationRequestsRunning) return;
         mScheduleQutGenerationRequestsRunning = false;
-        //TODO wenwenjun test
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                requestQutGenerate();
-                mScheduleQutGenerationRequestsRunning = false;
-                startScheduleQutGenerationRequests();
-            }
-        }, 10000);    // per 6 hour.
+//        //TODO wenwenjun test
+//        mHandler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                requestQutGenerate();
+//                mScheduleQutGenerationRequestsRunning = false;
+//                startScheduleQutGenerationRequests();
+//            }
+//        }, 10000);    // per 6 hour.
     }
 
     public synchronized Configuration configure(Context context) {

@@ -24,7 +24,7 @@ namespace wechat_backtrace {
     void
     FpUnwind(const uptr *regs, Frame *backtrace, const size_t frame_max_size, size_t &frame_size);
     void
-    FpUnwind(const uptr *regs,pthread_t pthread, Frame *backtrace, const size_t frame_max_size, size_t &frame_size);
+    FpUnwind(const uptr *regs,struct sigaltstack &stack,pthread_t pthread, Frame *backtrace, const size_t frame_max_size, size_t &frame_size);
 
 }  // namespace wechat_backtrace
 
